@@ -5,7 +5,6 @@ import com.example.shop.domain.model.Product
 
 class GetProductsUseKeys(
     private val repository: ProductRepository
-
 ) {
     suspend operator fun invoke(): List<Product>{ 
         return repository.getProducts()
